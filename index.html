@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>JsChallenge</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <div id="bg">
+        <img src="" />
+    </div>
+    <div id="clock"> 00:00:00</div>
+    <form id="loginForm" class="hidden">
+        <input type="text" placeholder="여행자의 이름은?" required maxlength="15" />
+        <input type="submit" value="가보자고" /> 
+    </form>
+    <h1 class="hidden" id="showUserName"></h1>
+    <div id="weather">
+        <span></span>
+        <span></span>
+    </div>   
+    <div>
+        
+        <form id="todo-form" class="todo-form">
+            <input id="todo-formInput" class="todo-formInput" type="text" placeholder="뭐할지 써보기"
+                required autocomplete="off" maxlength="14">
+        </form>
+    </div>    
+        <ul id="todo-list" class="todo-list">
+        </ul>
+     
+   
+    <script src="./component/clock.js"></script>
+    <script src="./component/login.js"></script>
+    <script src="./component/background.js"></script>
+    <script src="./component/todo.js"></script>
+    <script src="./component/weather.js"></script>
+</body>
+</html>
